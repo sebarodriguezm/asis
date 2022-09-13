@@ -15,7 +15,7 @@ export class ScanPage implements OnInit {
   constructor(
     
     ) {
-      this.myAngularxQrCode = 'HOLA';
+      this.myAngularxQrCode = 'www.tiendavirtualchileweb.cl';
      }
 
   ngOnInit() {
