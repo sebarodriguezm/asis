@@ -39,7 +39,11 @@ const routes: Routes = [
     path: 'scan',
     loadChildren: () => import('./scan/scan.module').then( m => m.ScanPageModule),
     canActivate: [IngresadoGuard]
+  },  {
+    path: 'scanner',
+    loadChildren: () => import('./scanner/scanner.module').then( m => m.ScannerPageModule)
   }
+
 ];
 
 @NgModule({
