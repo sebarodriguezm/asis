@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Escanea el código<br>y quedarás presente</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- Código Qr-->
+<ion-content>
+    <ion-card align="center">
+        <ion-card-header>
+            <ion-title size="medium">Escanea el código</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+            <qrcode [qrdata]="'myAngularxQrCode'" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+        </ion-card-content>
+        <ion-button [routerLink]="['/asistencia']">Volver</ion-button>
+    </ion-card>
+</ion-content>
+
+<!-- Barra de progreso, muestra porcentaje de alumnos presentes con respecto al total de alumnos-->
+<ion-toolbar align="center">
+    <ion-text>Porcentaje de asistencia 90%</ion-text>
+    <br><br>
+    <mat-progress-bar color="warn" mode="determinate" value="80"></mat-progress-bar>
+</ion-toolbar>
